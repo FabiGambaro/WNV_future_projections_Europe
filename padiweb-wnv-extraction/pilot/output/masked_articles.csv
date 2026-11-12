@@ -1,0 +1,112 @@
+id,url,publication_date,url_original,access,http_status,detail,duplicate_id,rule,text_for_extraction
+5QM7THZP0J,http://www.radioconstanta.ro/2024/09/12/caz-de-infectie-cu-virusul-west-nile-in-orasul-ovidiu/,2024-09-12 14:54:50,http://www.radioconstanta.ro/2024/09/12/caz-de-infectie-cu-virusul-west-nile-in-orasul-ovidiu/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! Could not resolve host: www.radioconstanta.ro",NA,no candidate,PADI-web text (masked; flag for review)
+BUW3RTG27R,https://www.stiripesurse.ro/al-treilea-deces-din-judetul-suceava-cauzat-de-virusul-west-nile-bilantul-ajunge-la-22-de-cazuri-in-romania_3427975.html,2024-09-09 09:00:15,https://www.stiripesurse.ro/al-treilea-deces-din-judetul-suceava-cauzat-de-virusul-west-nile-bilantul-ajunge-la-22-de-cazuri-in-romania_3427975.html,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+6VJF5F9U0H,https://www.swr.de/wissen/tigermuecken-so-gefaehrlich-sind-sie-wirklich-100.html,2023-08-28 08:43:00,https://www.swr.de/wissen/tigermuecken-so-gefaehrlich-sind-sie-wirklich-100.html,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+RVZJVQBWO4,https://femina.hu/terasz/tigrisszunyog-arca-kozelrol/,2023-08-30 08:00:00,https://femina.hu/terasz/tigrisszunyog-arca-kozelrol/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+K0ZU621VHN,https://www.publico.pt/2020/08/25/ciencia/noticia/ha-cavalo-infectado-virus-nilo-portugal-caso-normal-1929241,2020-08-25 08:00:00,https://www.publico.pt/2020/08/25/ciencia/noticia/ha-cavalo-infectado-virus-nilo-portugal-caso-normal-1929241,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+NNV50QIOX5,https://revistamarieclaire.globo.com/Noticias/noticia/2020/08/febre-do-nilo-ocidental-chega-espanha-e-38-pessoas-testam-positivo-ao-virus.html,2020-08-23 08:00:00,https://revistamarieclaire.globo.com/Noticias/noticia/2020/08/febre-do-nilo-ocidental-chega-espanha-e-38-pessoas-testam-positivo-ao-virus.html,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+P1R3CDTRFC,https://glasnews.bg/zdrave/niama-registrirani-sluchai-zapadnonilska-treska-plovdiv-i-548368/,2024-08-29 18:46:51,https://glasnews.bg/zdrave/niama-registrirani-sluchai-zapadnonilska-treska-plovdiv-i-548368/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: E7K2ATAF1D (0.92 word overlap),PADI-web text (masked; flag for review)
+Y80IFM0RJR,https://news.google.com/__i/rss/rd/articles/CBMibWh0dHBzOi8vaW5zcGFuamUubmwvem9yZy13ZWx6aWpuLzE1OTcyL2FuZGFsdXNpZS1zdGFydC1tZXQtcHJldmVudGllcGxhbi10ZWdlbi1uaWV1d2UtdWl0YnJhYWstd2VzdG5pamx2aXJ1cy_SAQA?oc%3D5,2021-04-27 08:00:00,https://inspanje.nl/zorg-welzijn/15972/andalusie-start-met-preventieplan-tegen-nieuwe-uitbraak-westnijlvirus/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: FTJKWCPMBT (0.88 word overlap),PADI-web text (masked; flag for review)
+03SDC88KNQ,https://news.google.com/__i/rss/rd/articles/CBMibWh0dHBzOi8vd3d3LnJ0dnNsby5zaS96YWJhdmEtaW4tc2xvZy90dXJlLWF2YW50dXJlL2dyY2lqYS1vcG96YXJqYS10dXJpc3RlLXByZWQtdmlydXNvbS16YWhvZG5lZ2EtbmlsYS80OTIyMzPSAQA?oc%3D5,2019-06-17 08:00:00,https://www.rtvslo.si/zabava-in-slog/ture-avanture/grcija-opozarja-turiste-pred-virusom-zahodnega-nila/492233,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+6JH864Q3O9,https://www.allodocteurs.fr/7-cas-de-virus-du-nil-occidental-identifies-en-gironde-faut-il-sinquieter-35461.html,2023-08-10 08:00:00,https://www.allodocteurs.fr/7-cas-de-virus-du-nil-occidental-identifies-en-gironde-faut-il-sinquieter-35461.html,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+5OXH9JW4J4,https://theobjective.com/espana/andalucia/2024-09-05/virus-del-nilo-crisis-ayuntamiento-coria-sevilla/,2024-09-05 09:23:40,https://theobjective.com/espana/andalucia/2024-09-05/virus-del-nilo-crisis-ayuntamiento-coria-sevilla/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+6I3RGNQF4I,https://www.europapress.es/esandalucia/sevilla/noticia-salud-detecta-aumento-mosquitos-transmisores-virus-nilo-occidental-municipios-cadiz-sevilla-20231111122954.html,2023-11-11 08:00:00,https://www.europapress.es/esandalucia/sevilla/noticia-salud-detecta-aumento-mosquitos-transmisores-virus-nilo-occidental-municipios-cadiz-sevilla-20231111122954.html,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: 72R6O7OYV0 (0.65 word overlap); 8OZCVNLXWX (0.56 word overlap); FND8M59WTB (0.53 word overlap); G92HN7KV0Q (0.53 word overlap); L88BXFEOEU (0.59 word overlap); MRDO0YXPRM (0.65 word overlap); Q1KGXTTUTP (0.64 word overlap); R88QHUL6CH (0.62 word overlap); W4DHMZZBF9 (0.62 word overlap); W5I9GVZ52L (0.58 word overlap); XYZJQCZXZH (0.53 word overlap),PADI-web text (masked; flag for review)
+7QRV8X8RHF,https://www.elcorreoweb.es/sevilla/2024/09/13/infectado-virus-nilo-san-juan-aznalfarache-108104593.html,2024-09-13 16:23:31,https://www.elcorreoweb.es/sevilla/2024/09/13/infectado-virus-nilo-san-juan-aznalfarache-108104593.html,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+EF6QTFJG9P,https://www.larazon.es/andalucia/virus-nilo-cobra-septima-victima-mortal-vecino-mairena-aljarafe-patologias-previas_2024090966df0bd9b3741e0001dcb61f.html,2024-09-09 17:35:15,https://www.larazon.es/andalucia/virus-nilo-cobra-septima-victima-mortal-vecino-mairena-aljarafe-patologias-previas_2024090966df0bd9b3741e0001dcb61f.html,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+FGMOP512N4,https://www.europapress.es/andalucia/sevilla-00357/noticia-ismael-sanchez-reclama-sanz-maxima-seriedad-primer-caso-virus-nilo-sevilla-capital-20240910184639.html,2024-09-10 17:47:08,https://www.europapress.es/andalucia/sevilla-00357/noticia-ismael-sanchez-reclama-sanz-maxima-seriedad-primer-caso-virus-nilo-sevilla-capital-20240910184639.html,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+KA65MUAGOD,https://www.elpais.cr/2022/08/18/italia-registra-230-contagios-con-virus-del-nilo-occidental/,2022-08-18 20:00:13,https://www.elpais.cr/2022/08/18/italia-registra-230-contagios-con-virus-del-nilo-occidental/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+VA0LZT1SID,https://www.laopiniondemalaga.es/andalucia/2024/04/24/fiebre-virus-nilo-adelanta-detectan-primer-caso-andalucia-101509904.html,2024-04-24 18:08:20,https://www.laopiniondemalaga.es/andalucia/2024/04/24/fiebre-virus-nilo-adelanta-detectan-primer-caso-andalucia-101509904.html,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+D8A3GI0PZB,https://www.blic.rs/vesti/drustvo/groznica-zapadnog-nila-simptomi-cesto-izostaju-ali-temperatura-mucnina-i-povracanje/msvmqh2,2023-08-06 08:00:00,https://www.blic.rs/vesti/drustvo/groznica-zapadnog-nila-simptomi-cesto-izostaju-ali-temperatura-mucnina-i-povracanje/msvmqh2,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+LBM5HC2BQM,https://www.oekotest.de/gesundheit-medikamente/Asiatische-Tigermuecke-breitet-sich-aus-Wie-gefaehrlich-ist-die-exotische-Muecke-_600858_1.html,2023-04-27 16:27:00,https://www.oekotest.de/gesundheit-medikamente/Asiatische-Tigermuecke-breitet-sich-aus-Wie-gefaehrlich-ist-die-exotische-Muecke-_600858_1.html,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+XAHMQRQQTM,https://www.fr.de/panorama/gefaehrliches-west-nil-virus-koennte-sich-verbreiten-erster-mensch-in-deutschland-infiziert-zr-93274136.html,2024-09-02 18:30:00,https://www.fr.de/panorama/gefaehrliches-west-nil-virus-koennte-sich-verbreiten-erster-mensch-in-deutschland-infiziert-zr-93274136.html,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: X9Z0Q0U38E (0.87 word overlap); ZUNR7ZJMLG (0.88 word overlap),PADI-web text (masked; flag for review)
+ZX2BH9JN7G,https://tropeninstitut.de/aktuelle-krankheitsmeldungen/30.08.2023-italen-west-nil-virus,2023-08-30 08:00:00,https://tropeninstitut.de/aktuelle-krankheitsmeldungen/30.08.2023-italen-west-nil-virus,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+FVU9XV03CU,https://www.espreso.co.rs/vesti/drustvo/1137707/komarci-zarazeni-virusom-zapadnog-nila-samo-u-ovoj-sezoni-odneli-8-zivota,2022-09-15 14:15:22,https://www.espreso.co.rs/vesti/drustvo/1137707/komarci-zarazeni-virusom-zapadnog-nila-samo-u-ovoj-sezoni-odneli-8-zivota,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: 29PCULGF8J (0.81 word overlap); 5ZUY7YDXUW (0.8 word overlap); HTJ9B6A5XX (0.8 word overlap); K71GVS3075 (0.62 word overlap); L215T47S1S (0.57 word overlap); NCK1OXPA0O (0.53 word overlap); WG8H9A46QB (0.81 word overlap); X4Q7TT8CKB (0.56 word overlap),PADI-web text (masked; flag for review)
+LM27VUSMZA,https://news.google.com/__i/rss/rd/articles/CBMieWh0dHBzOi8vcGluay5ycy9kcnVzdHZvLzQ0MjMzNC9rb21hcmNpLWktZGFsamUtdXJuaXN1LXZpcnVzb20temFwYWRub2ctbmlsYS16YXJhemlsaS1qb3MtMTUtb3NvYmEtZHZhLW5vdmEtc21ydG5hLXNsdWNhamHSAQA?oc%3D5,2022-10-20 15:18:43,https://pink.rs/drustvo/442334/komarci-i-dalje-urnisu-virusom-zapadnog-nila-zarazili-jos-15-osoba-dva-nova-smrtna-slucaja,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: 29PCULGF8J (0.72 word overlap); 5ZUY7YDXUW (0.72 word overlap); HTJ9B6A5XX (0.72 word overlap); K71GVS3075 (0.63 word overlap); L215T47S1S (0.54 word overlap); WG8H9A46QB (0.72 word overlap); X4Q7TT8CKB (0.57 word overlap),PADI-web text (masked; flag for review)
+0RL861RL4F,https://www.ecodibergamo.it/stories/premium/Cronaca/piu-caldo-piu-zanzare-in-aumento-casi-west-nile-dengue-o_1519234_11/,2023-07-03 06:00:00,https://www.ecodibergamo.it/stories/premium/Cronaca/piu-caldo-piu-zanzare-in-aumento-casi-west-nile-dengue-o_1519234_11/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+162K7BOMAG,https://news.google.com/__i/rss/rd/articles/CBMiWmh0dHBzOi8vcG9saXRpc29ubGluZS5jb20vZWxsYWRhLzc4MjE3NS9pb3MtZHl0aWtvdS1uZWlsb3Uta2FuZW5hLWtyb3VzbWEtZ2lhLTJpLWV2ZG9tYWRhL9IBAA?oc%3D5,2022-11-08 16:28:02,https://politisonline.com/ellada/782175/ios-dytikou-neilou-kanena-krousma-gia-2i-evdomada/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: 3KGZ38HOCJ (0.64 word overlap); 8CYQ2ZXXYT (0.51 word overlap); 9O7PUUVWLP (0.64 word overlap); EFET3PKNVQ (0.63 word overlap); EHR8NC4NLO (0.62 word overlap); EU950X64FL (0.64 word overlap); IBK2TTHP4J (0.51 word overlap); L1P89856GA (0.52 word overlap); NMU18TW8Y0 (0.58 word overlap); NQFVTJN85C (0.58 word overlap); POHX9QKJWY (0.52 word overlap); RRYA1YMIC8 (0.65 word overlap); ULR1H55BYV (0.56 word overlap); WIW5VSU8IJ (0.69 word overlap); XY9DXZM6I9 (0.52 word overlap); YINXORXSWJ (0.53 word overlap),PADI-web text (masked; flag for review)
+42U1IPA9WB,https://news.google.com/__i/rss/rd/articles/CBMiQ2h0dHBzOi8veHJvbm9zLmdyL2VwaWthaXJvdGl0YS9leGFwbG9uZXRhaS1vLWlvcy10b3ktZHl0aWtveS1uZWlsb3nSAQA?oc%3D5,2022-10-17 15:23:32,https://xronos.gr/epikairotita/exaplonetai-o-ios-toy-dytikoy-neiloy,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: AI61FVSPKO (0.81 word overlap),PADI-web text (masked; flag for review)
+8RWSCIGSQ4,https://paidis.com/2024/08/29/%CE%B9%CF%8C%CF%82-%CE%B4%CF%85%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-%CE%BD%CE%B5%CE%AF%CE%BB%CE%BF%CF%85-%CE%B1%CF%85%CE%BE%CE%AC%CE%BD%CE%BF%CE%BD%CF%84%CE%B1%CE%B9-%CE%BA%CF%81%CE%BF%CF%8D%CF%83%CE%BC/,2024-08-29 09:11:04,https://paidis.com/2024/08/29/%CE%B9%CF%8C%CF%82-%CE%B4%CF%85%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-%CE%BD%CE%B5%CE%AF%CE%BB%CE%BF%CF%85-%CE%B1%CF%85%CE%BE%CE%AC%CE%BD%CE%BF%CE%BD%CF%84%CE%B1%CE%B9-%CE%BA%CF%81%CE%BF%CF%8D%CF%83%CE%BC/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: 07TM9771UN (0.72 word overlap); 3AO7H1AGKT (0.54 word overlap); 4RIFKGRVBZ (0.57 word overlap); 60RTF8V1SJ (0.51 word overlap); 7D18MDBPZW (0.58 word overlap); 82UWNPKTEH (0.53 word overlap); 8FVV2XZH60 (0.57 word overlap); 8VBB71LUSJ (0.59 word overlap); 8ZO8B2GQ9J (0.58 word overlap); 93UDY6XWP9 (0.56 word overlap); 9J4UU2OVM6 (0.57 word overlap); BBZE50HM6P (0.75 word overlap); EU4PN55UOS (0.61 word overlap); FE8RMFGUWR (0.58 word overlap); FF70QEQLWC (0.53 word overlap); G5B0FO1Y8F (0.55 word overlap); GN41QMDTC5 (0.5 word overlap); H5OLS0B2QF (0.63 word overlap); HSYTRGE4J1 (0.58 word overlap); I888H0R3UH (0.63 word overlap); OKXX13NLFK (0.55 word overlap); PWFG6G33NV (0.53 word overlap); S7S27XLSU5 (0.53 word overlap); SWYD11Z3WL (0.51 word overlap); T4GP65SF5N (0.62 word overlap); TN3TF3UAMD (0.52 word overlap); TS9HY0ND4F (0.53 word overlap); WM9VOJZS6Z (0.71 word overlap); WUXAO4HMXX (0.59 word overlap); XS0A102RO5 (0.53 word overlap); Y9O8CFFI9J (0.59 word overlap); YQ4KWR9BH8 (0.52 word overlap),PADI-web text (masked; flag for review)
+DW03RTHP0L,https://news.google.com/__i/rss/rd/articles/CBMidGh0dHBzOi8vd3d3Lm5ld3MuZ3IvZWxsYWRhL2FydGljbGUvMzA2OTczNi9pb3MtZGl0aWtvdS1uaWxvdS1zZS0yODQtYW5lcmNob250ZS1zaW5vbGlrYS10YS1rcm91c21hdGEtMzAtdGhhbmF0aS5odG1s0gEA?oc%3D5,2022-10-25 14:00:09,https://www.news.gr/ellada/article/3069736/ios-ditikou-nilou-se-284-anerchonte-sinolika-ta-krousmata-30-thanati.html,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: 3KGZ38HOCJ (0.54 word overlap); EFET3PKNVQ (0.51 word overlap); EHR8NC4NLO (0.52 word overlap); EU950X64FL (0.54 word overlap); MFQ5YEXKPS (0.5 word overlap); NMU18TW8Y0 (0.53 word overlap); WIW5VSU8IJ (0.52 word overlap),PADI-web text (masked; flag for review)
+G1HAI73RQ8,https://cibum.gr/nea/ayxanomenos-o-kindynos-astheneion-poy-metadidontai-apo-koynoypia-symfona-me-to-ecdc/,2023-07-10 20:19:55,https://cibum.gr/nea/ayxanomenos-o-kindynos-astheneion-poy-metadidontai-apo-koynoypia-symfona-me-to-ecdc/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+J8W6HNLYZT,https://www.tovima.gr/2022/09/20/society/ios-dytikou-neilou-19-thanatoi-kai-39-krousmata-stin-ellada/,2022-09-20 08:00:00,https://www.tovima.gr/2022/09/20/society/ios-dytikou-neilou-19-thanatoi-kai-39-krousmata-stin-ellada/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: 3DBS1MKRF1 (0.55 word overlap); 62O911KUO9 (0.52 word overlap); 86K98OAM25 (0.53 word overlap); BVK4Z6WGG2 (0.51 word overlap); CKI4YC1YVJ (0.53 word overlap); E6U1SSHW7W (0.51 word overlap); JF3PP874QU (0.52 word overlap); UZPS4RCYVW (0.5 word overlap); X4Q6CBVONN (0.52 word overlap),PADI-web text (masked; flag for review)
+MUO5JGGU61,https://www.protothema.gr/greece/article/1411683/eodu-19-nea-krousmata-loimoxis-apo-ton-io-tou-dutikou-neilou/,2023-09-12 08:00:00,https://www.protothema.gr/greece/article/1411683/eodu-19-nea-krousmata-loimoxis-apo-ton-io-tou-dutikou-neilou/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+T52BCSB3O0,https://www.alphanews.live/cyprus/ios-dytikou-neilou-asybtomatikoi-to-80-ton-asthenon-pote-kataligeis-sti-meth/,2024-10-09 08:00:00,https://www.alphanews.live/cyprus/ios-dytikou-neilou-asybtomatikoi-to-80-ton-asthenon-pote-kataligeis-sti-meth/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+XQJ1DXPEDJ,https://athina984.gr/2022/09/06/ios-dytikoy-neiloy-15-thanatoi-kai-160-ta-synolika-kroysmata/,2022-09-06 19:20:27,https://athina984.gr/2022/09/06/ios-dytikoy-neiloy-15-thanatoi-kai-160-ta-synolika-kroysmata/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: PQ6EL95FJ2 (0.59 word overlap); S6HBNXWIYZ (0.57 word overlap),PADI-web text (masked; flag for review)
+YAQXKRQTV1,https://www.philenews.com/kipros/koinonia/article/1515766/proto-krousma-tou-iou-tou-ditikou-nilou-stin-kipro-ilikiomenos-nosilevete-krisima/,2024-10-08 08:00:00,https://www.philenews.com/kipros/koinonia/article/1515766/proto-krousma-tou-iou-tou-ditikou-nilou-stin-kipro-ilikiomenos-nosilevete-krisima/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+ZND2Z8RPKA,https://news.google.com/__i/rss/rd/articles/CBMiZWh0dHBzOi8vaGVhbHRocGhhcm1hLmdyL3B1YmxpYy1oZWFsdGgvaW9zLWR5dGlrb3ktbmVpbG95LWFrb21hLWVuYXMtdGhhbmF0b3MtYXBvLXRzaW1waW1hLWtveW5veXBpb3kv0gEA?oc%3D5,2022-11-22 08:00:00,https://healthpharma.gr/public-health/ios-dytikoy-neiloy-akoma-enas-thanatos-apo-tsimpima-koynoypioy/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: POHX9QKJWY (0.54 word overlap); VY3TQ4R10O (0.57 word overlap); YINXORXSWJ (0.52 word overlap),PADI-web text (masked; flag for review)
+BL2S55328O,https://kibrishaberci.com/guney-kibrista-bati-nil-virusu-vakasi-tespit-edildi-kibris-haber/,2023-09-01 08:00:00,https://kibrishaberci.com/guney-kibrista-bati-nil-virusu-vakasi-tespit-edildi-kibris-haber/,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,no candidate,PADI-web text (masked; flag for review)
+JWYU5GWT5B,https://www.dunya.com/gundem/bodrumda-alarm-verildi-bati-nil-virusune-yakalandi-resmi-yazi-gonderildi-haberi-743992,2024-08-30 09:28:00,https://www.dunya.com/gundem/bodrumda-alarm-verildi-bati-nil-virusune-yakalandi-resmi-yazi-gonderildi-haberi-743992,blocked,NA,"Failed to perform HTTP request.
+Caused by error in `curl::curl_fetch_memory()`:
+! CONNECT tunnel failed, response 403",NA,near duplicate(s) not used: F3QEAAYW2N (0.57 word overlap),PADI-web text (masked; flag for review)
