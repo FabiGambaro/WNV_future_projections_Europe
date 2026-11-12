@@ -17,7 +17,17 @@ R/05_outputs.R               presence table + Excel workbook (explicit autochtho
 data/extraction_prompt.md    extraction instructions sent to Claude
 data/nuts3_aliases.csv       exonyms and press spellings -> NUTS3 code (extend as needed)
 data/manual_corrections.csv  documented hand corrections
-pilot/                       inputs and outputs of the 100-article pilot
+data/record_corrections.csv  field fixes to extracted records
+data/added_records.csv       records the readers missed, added by hand
+data/review_decisions.csv    final grades set by the human reviewer (applied in R/04)
+full_run/                    inputs and outputs of the full run (all articles)
+full_run/records_extracted.csv   all records extracted by Claude, with verbatim quotes
+full_run/article_outcomes.csv    one row per article: relevant / not relevant, masking route
+full_run/masked_to_download.csv, download_log.csv, originals_check.csv
+                             masked articles, download attempts and check of the original pages
+full_run/output/             final outputs: NUTS3_year_presence_explicit.csv (grade A),
+                             NUTS3_year_B_residence.csv (grade B), padiweb_wnv_explicit.xlsx
+tools/                       helpers for the run (masked-page download, batch merge, quote check, reader brief)
 ```
 
 ## Requirements
