@@ -9,4 +9,12 @@ The time window of each GWL was defined as the 21-year period centred on the yea
 
 
 <img width="5163" height="2665" alt="image" src="https://github.com/user-attachments/assets/9d12272f-a076-4318-9c35-76469be19548" />
+
 <sub>Figure 1. Time window for the global warming levels according to the different pledges scenarios. The 21-year window corresponds to the global warming level estimated for each GCM-SSP combination (global climatic model and shared socioeconomic pathway combinations; top panel), based on global mean surface temperature (GSAT, annual global mean surface air temperature) relative to the pre-industrial era (1850-1900) and for the land-use SSP3-7.0 marker scenario (bottom panel) using GSAT anomalies from SSP3-7.0 produced by the AIM/CGE integrated assessment model (IAM) and estimated with the FaIR emulator from IPCC. Future warming levels were estimated by the Emission Gap Report 2025 with a 66% likelihood of not being exceeded according to the different pledged scenarios. “NDC” refers to “nationally determined contributions”.</sub>
+
+
+## Future projections
+
+<img width="2565" height="1770" alt="image" src="https://github.com/user-attachments/assets/6a95160b-570b-482a-a849-92e6fbf74b5f" />
+
+<sub>FFigure 2. Future projections of ecological suitability for human WNV cases in Europe at different global warming levels. The first row of maps shows the estimated ecological suitability for human WNV cases at different global warming levels, averaged across 100 replicate BRT analyses and model combinations. The second row of maps shows the difference in ecological suitability relative to the current warming level of 1.3°C. The density plot and green bar at the bottom of the figure summarise time windows of each GCM-SSP combination (combination of global climatic model and shared socioeconomic pathway) and land-use marker scenario, respectively, used to extract the corresponding data in each warming-level threshold. </sub>
