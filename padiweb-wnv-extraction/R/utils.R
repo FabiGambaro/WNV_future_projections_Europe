@@ -29,7 +29,7 @@ stem_name <- function(k) {
 strip_admin_words <- function(x) {
   x <- norm_txt(x)
   x <- str_replace_all(x, "\\b(east|west|north|south)ern\\b", "\\1")   # "Eastern Attica" = "East Attica"
-  x <- str_replace_all(x, "\\b(regional unit of|regional unit|metropolitan unit of|mitropolitiki enotita|perifereiaki enotita|health area|prefecture of|province of|county of|district of|municipality of|the|county|province|provincia|district|okrug|oblast|judet|judetul|prefecture|region|department|departement|nomos)\\b", " ")
+  x <- str_replace_all(x, "\\b(regional unit of|regional unit|metropolitan unit of|mitropolitiki enotita|perifereiaki enotita|health area|prefecture of|province of|county of|district of|municipality of|the|county|province|provincia|district|okrug|oblast|judet|judetul|prefecture|region|regija|regiji|regije|regione|department|departement|nomos)\\b", " ")
   str_squish(x)
 }
 

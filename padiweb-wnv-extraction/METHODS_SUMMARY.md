@@ -20,31 +20,33 @@
    - Year of infection.
    - A verbatim quote.
 
-   Done with the Claude API (`R/03`) or with parallel reader agents (`tools/reader_brief.md`, `tools/check_quotes.py`, `tools/merge_batches.py`). The full run produced 18,600 records from 2,919 articles.
+   Done with the Claude API (`R/03`) or with parallel reader agents (`tools/reader_brief.md`, `tools/check_quotes.py`, `tools/merge_batches.py`). The full run produced 18,600 records from 2,919 articles; one missed record was added and 7 fields were corrected after an independent replication (`data/added_records.csv`, `data/record_corrections.csv`).
 4. **Quote check, NUTS3, grading** (`R/04`):
    - Every quote must appear verbatim in its source text.
    - Places get a NUTS3 code by one of these routes: name match, aliases, Greek/Serbian normalisation, GeoNames point-in-polygon, then the province named in the text.
    - Records are graded:
      - **A**: the text states where the person was infected ("infected in Utrera", "exposed in Milan"). This includes travel cases infected in another country.
+     - **B (hedged)**: place of infection given with hedged wording ("probably / most likely / presumed / believed / allegedly infected in X"), or a sentence that may refer to mosquitoes (Pančevo, Požarevac 2022).
      - **B**: explicitly local (a literal term such as autochthonous, locally acquired or domestic case, or an explicit "had not travelled"), but located only by residence or reporting area.
      - **B-**: residence or reporting area with no explicit local wording.
      - **C**: hospital only, competing exposure places, suspected case or unknown year.
    - Paraphrases ("local mosquitoes", "no evidence of residing abroad") do not count as local.
-5. **Outputs** (`R/05`).
+5. **Human review**: the Review tab was checked by hand (FG, 2026-10-21). The 23 decisions (6 confirmed A, 9 set to B, 8 excluded) are in `data/review_decisions.csv` and override the automatic grade; no NUTS3-year changed.
+6. **Outputs** (`R/05`).
 
 ## Outputs (`full_run/output/`)
-- `NUTS3_year_presence_explicit.csv`: **grade A presences**, 113 NUTS3 x years. One row per NUTS3 x year of infection (presence, not case counts).
-- `NUTS3_year_B_residence.csv`: **grade B sensitivity layer**, 136 more NUTS3 x years not already in the A table.
+- `NUTS3_year_presence_explicit.csv`: **grade A presences**, 105 NUTS3 x years. One row per NUTS3 x year of infection (presence, not case counts).
+- `NUTS3_year_B_residence.csv`: **grade B sensitivity layer**, 145 more NUTS3 x years not already in the A table.
 - `padiweb_wnv_explicit.xlsx`:
 
 | Tab | Rows | Content |
 |---|---|---|
 | README | 9 | Rules and counts of the run |
-| NUTS3_year | 113 | Same as the presence CSV (grade A) |
-| B_residence | 136 | Same as the B CSV |
-| Records | 7,196 | Every explicit record in continental Europe (grade A or explicitly local), whatever its NUTS3 result |
-| Review | 20 | Explicit records that need a human check; reason in `review_reason` |
-| Not_explicit | 11,404 | All other records (no local wording, paraphrase only, imported, or outside continental Europe), for traceability |
+| NUTS3_year | 105 | Same as the presence CSV (grade A) |
+| B_residence | 145 | Same as the B CSV |
+| Records | 7,190 | Every explicit record in continental Europe (grade A or explicitly local), whatever its NUTS3 result |
+| Review | 0 | Explicit records that still need a human check (all 23 have been reviewed; decisions in `data/review_decisions.csv` and `review_reason`) |
+| Not_explicit | 11,411 | All other records (no local wording, paraphrase only, imported, or outside continental Europe), for traceability |
 | Masked_articles | 2,090 | Masked articles: how each was read and what to check |
 | Articles | 4,555 | Outcome per article (records found, or why none) |
 

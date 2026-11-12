@@ -13,6 +13,9 @@ Read every article yourself (no keyword scripts to decide records). Apply the in
 - "Infected by the bite of a domestic/native mosquito" ("heimische Mücke") said ABOUT THE CASE counts as autochthonous; a general sentence that WNV is carried by domestic mosquitoes does not.
 - Cases summed over several years with no per-year split: year_infection null, year_basis "explicit", range in note.
 - Residence is not place of infection. Hospital-only location -> role "hospital".
+- "Cases come from X" and "a case in the province of X ... infected locally" give residence / reporting area, not a place of infection. Hedged wording ("probably infected in X", "most likely place of exposure X") stays role infection with the hedge in the quote; R grades it B.
+- When an article lists earlier travel cases by year ("in 2007 from Cyprus and Tanzania"), record each place. Leave year_infection empty when the text gives no year for that case.
+- A city-state (Berlin, Hamburg, Vienna) has place_level "province": it is itself a NUTS3 unit.
 - Masked spans ("-----", "*****"): if the second text reveals the hidden place, record it and take the quote from that second text; otherwise never guess. Mention masks in note.
 - Skip animal-only, mosquito-only, country-total-only content and other diseases. Never make a region/country record when a smaller place for the same cases is given. Do not record places named only in menus or other headlines of the original web page.
 - quote: copied character for character from ONE source text of that article (check: it must be an exact substring). Keep quotes short (one sentence or a list fragment). text_source names that source: "padiweb" (the PADI-web English text or title), "original", "duplicate:<id>" or "padiweb+locations" (exactly as given in the section header). Prefer "padiweb" when the place is visible there.

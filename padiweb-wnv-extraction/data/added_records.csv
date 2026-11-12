@@ -1,0 +1,2 @@
+pid,article_id,place,country,place_level,admin_hint,role,status,human_case,certainty,n_cases,year_infection,year_basis,quote,note,text_source,reason
+added_1,OFPG6DCTQS,Cyprus,CY,country,,infection,imported,yes,confirmed,,2007,explicit,in 2007 from Cyprus,Czech traveller infected in Cyprus in 2007,padiweb,Czechs 'brought West Nile fever from abroad ... in 2007 from Cyprus'; missed by the reader (2026-10-20 replication check)

@@ -8,6 +8,20 @@ mask <- if (file.exists(file.path(cfg$WORK_DIR, "masked_articles.csv")))
 aliases <- read_csv(cfg$ALIASES_CSV, col_types = cols(.default = "c"))
 fixes   <- read_csv(cfg$CORRECTIONS_CSV, col_types = cols(.default = "c"))
 
+# records missed by the readers and field fixes after review (both documented, with reasons, in data/);
+# a fix only applies when the record's current value matches `old_value`, so a fresh extraction is never overwritten blindly
+if (file.exists(cfg$ADDED_RECORDS_CSV)) rec <- bind_rows(rec, read_csv(cfg$ADDED_RECORDS_CSV, col_types = cols(.default = "c")) |> select(-any_of("reason")))
+rec$infection_uncertain <- FALSE
+if (file.exists(cfg$RECORD_FIXES_CSV)) {
+  rfix <- read_csv(cfg$RECORD_FIXES_CSV, col_types = cols(.default = "c"))
+  for (j in seq_len(nrow(rfix))) {
+    f <- rfix[j, ]; hit <- which(rec$article_id == f$article_id & rec$place == f$place)
+    if (f$field != "infection_uncertain") hit <- hit[coalesce(rec[[f$field]][hit], "") == coalesce(f$old_value, "")]
+    if (!length(hit)) { cat("record fix not applied (no match):", f$article_id, f$place, f$field, "\n"); next }
+    rec[[f$field]][hit] <- if (f$field == "infection_uncertain") TRUE else f$new_value
+  }
+}
+
 rec <- rec |> left_join(select(art, article_id = id, title, text, publication_date, source_country = country), by = "article_id")
 
 # 3. Quotes must be exact substrings of the text the record was extracted from ----------------
@@ -28,7 +42,7 @@ literal_local <- regex(paste0("autochthon|autocton|aut[o\u00f3]cton|autohton|\u0
   "domestic(ally)?[- ]?(acquired|cases?|origin|transmission|infections?|patients?)|of domestic origin|",
   "\u03b5\u03b3\u03c7\u03ce\u03c1\u03b9|hazai|doma\u0107|\u0434\u043e\u043c\u0430\u045b|indigen|",
   # an explicit statement of no travel is the surveillance definition of a locally acquired case
-  "(did|had|has|have) not (report(ed)? (any )?)?(recently )?(travel|been on a trip|been abroad|left)|",
+  "(did|had|has|have|would) not (have )?(report(ed)? (any )?)?(recently )?(travel|been on a trip|been abroad|left)|",
   "no (recent )?(history of )?travel(l?ing)?( history)? (was |were )?(reported|outside|abroad|in the)|no (recent )?travel history|",
   "without (any )?(recent )?travel|not report(ed)? (any )?(recent )?(travel|trips)|denied (any )?(recent )?travel|",
   "non (ha|aveva|avevano|hanno) (effettuato |fatto )?viagg|nessun viaggio|",
@@ -37,6 +51,15 @@ literal_local <- regex(paste0("autochthon|autocton|aut[o\u00f3]cton|autohton|\u0
   "\u03b4\u03b5\u03bd (\u03b5\u03af\u03c7\u03b5|\u03b5\u03af\u03c7\u03b1\u03bd) \u03c4\u03b1\u03be\u03b9\u03b4|nije putova|nisu putova|nicht gereist|keine reiseanamnese"), ignore_case = TRUE)
 rec$literal_local <- pmap_lgl(list(rec$article_id, rec$text_source, rec$text, rec$title, rec$quote),
   function(a, s, t, ti, q) { st <- src_text(a, s, t, ti); str_detect(paste(st, q), literal_local) })
+# a place of infection given with hedged wording ("probably infected in Hamburg", "most likely infected in the
+# Pomurska region", "presumed place of infection", "believed to have been infected", "allegedly infected") is
+# grade B, not A (decision 2026-10-20)
+hedged_re <- regex(paste0("\\b(probabl[ey]|most likely|likely|presum(ed|ably|ptive)|possibl[ey]|suspected|believed|allegedly|apparently|assumed|supposed(ly)?|",
+  "(thought|said|considered) to have|",
+  "(may|might|could) have (been|become|got(ten)?) infected|(may|might|could) have (contracted|caught|acquired)|wahrscheinlich|vermutlich|vermutet|mutma\u00dflich|offenbar|angenommen|probabilmente|presumibilmente|",
+  "probablemente|presumiblemente|probablement|probabil|verjetno|val\u00f3sz\u00edn\u0171|vjerojatno|verovatno|",
+  "\u0432\u0435\u0440\u043e\u0432\u0430\u0442\u043d\u043e|\u03c0\u03b9\u03b8\u03b1\u03bd)"), ignore_case = TRUE)
+rec$infection_uncertain <- rec$infection_uncertain | (rec$role == "infection" & str_detect(coalesce(rec$quote, ""), hedged_re))
 rec$quote_verified <- pmap_lgl(list(rec$article_id, rec$text_source, rec$text, rec$title, rec$quote),
   function(a, s, t, ti, q) { st <- src_text(a, s, t, ti); !is.na(st) && str_detect(st, fixed(q)) })
 cat("Quotes verified:", sum(rec$quote_verified), "of", nrow(rec), "\n")
@@ -54,6 +77,7 @@ alias_keys <- aliases |> transmute(nuts3, key = strip_admin_words(alias))
 single_nuts3 <- st_drop_geometry(nuts[["2024"]]) |> count(cc = substr(nuts3, 1, 2)) |> filter(n == 1) |>
   left_join(st_drop_geometry(nuts[["2024"]]) |> mutate(cc = substr(nuts3, 1, 2)), by = "cc") |> with(setNames(as.list(nuts3), cc))
 
+single_child <- st_drop_geometry(nuts[["2024"]]) |> add_count(n2 = substr(nuts3, 1, 4)) |> filter(n == 1) |> pull(nuts3)
 stem_keys <- bind_rows(name_keys, alias_keys) |> mutate(s = map(key, stem_name)) |> unnest(s) |> distinct(nuts3, s)
 resolve_name <- function(x, country = NA) {
   if (is.na(x) || x == "") return(NA_character_)
@@ -169,7 +193,10 @@ geocode_one <- function(i) {
   if (lvl == "country") return(modifyList(out, list(method = "coarser than NUTS3")))
   # a whole country named as if it were a province ("AP Kosovo (one case)") is country level
   if (strip_admin_words(r$place) %in% c("kosovo", "ap kosovo", "kosovski", "kosova")) return(modifyList(out, list(method = "coarser than NUTS3")))
-  if (lvl == "region") return(modifyList(out, list(method = "coarser than NUTS3")))
+  # a region that is also a single NUTS3 unit (city-states such as Berlin, Hamburg, Vienna) is matched by name
+  if (lvl == "region") { n <- resolve_name(r$place, cc)
+    if (!is.na(n) && n %in% single_child) return(modifyList(out, list(nuts3 = n, method = "name match (region that is a single NUTS3)")))
+    return(modifyList(out, list(method = "coarser than NUTS3"))) }
   # route 1: the place is itself a NUTS3 unit
   if (lvl == "province") {
     n <- resolve_name(r$place, cc)
@@ -243,6 +270,7 @@ rec <- rec |> mutate(
     is.na(nuts3_2024)                            ~ "no NUTS3 (geocoding failed)",
     role %in% c("hospital", "possible_exposure") | certainty == "suspected" | is.na(year_infection) ~
       "C: review (hospital / uncertain exposure / suspected / unknown year)",
+    role == "infection" & infection_uncertain    ~ "B: place of infection hedged or uncertain",
     role == "infection"                          ~ "A: place of infection stated",
     status == "autochthonous"                    ~ "B: autochthonous, located by residence/reporting area",
     TRUE                                         ~ "B-: residence/reporting area, status not stated"),
@@ -271,6 +299,25 @@ rec <- rec |> mutate(
              NULL)
       if (length(x)) paste(x, collapse = "; ") else NA_character_
     }))
+
+# human review (data/review_decisions.csv): the reviewer's decision overrides the grade of that record
+# (A = place of infection confirmed, B = local but place of infection not explicit, exclude = not counted)
+if (file.exists(cfg$REVIEW_DECISIONS_CSV)) {
+  rev <- read_csv(cfg$REVIEW_DECISIONS_CSV, col_types = cols(.default = "c"))
+  miss <- anti_join(rev, rec, by = c("article_id", "place", "quote"))
+  if (nrow(miss)) { cat("review decisions with no matching record:\n"); print(miss) }
+  rec <- rec |> left_join(select(rev, article_id, place, quote, decision, reviewer_note), by = c("article_id", "place", "quote")) |>
+    mutate(evidence_grade = case_when(
+             decision == "A" ~ "A: place of infection stated (confirmed by review)",
+             decision == "B" ~ "B: place of infection not explicit (set by review)",
+             decision == "exclude" ~ "excluded by review",
+             TRUE ~ evidence_grade),
+           explicit_autochthonous = if_else(!is.na(decision), in_study_area & decision != "exclude", explicit_autochthonous),
+           in_presence = explicit_autochthonous & str_detect(evidence_grade, "^A:"),
+           in_b_layer  = explicit_autochthonous & str_detect(evidence_grade, "^B:"),
+           review_reason = if_else(!is.na(decision), paste0(if_else(is.na(review_reason), "", paste0(review_reason, "; ")), "reviewed: ", decision, " (", reviewer_note, ")"), review_reason)) |>
+    select(-decision, -reviewer_note)
+}
 
 write_csv(select(rec, -text, -title), file.path(cfg$WORK_DIR, "records_geocoded.csv"))
 cat("Records:", nrow(rec), "\n"); print(count(rec, evidence_grade)); print(count(rec, geo_method, sort = TRUE))

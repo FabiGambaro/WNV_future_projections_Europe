@@ -1,0 +1,8 @@
+article_id,place,field,old_value,new_value,reason
+UAQBVLW13Q,Cosenza,role,infection,reporting_area,"'a case of human infection in the province of Cosenza ... would have become infected locally' names no place of infection (2026-10-20 replication check)"
+C68E0Q1Q12,Spata-Artemis,role,infection,reporting_area,"'the cases ... come from Eastern Attica (Municipality of Spata-Artemis)' is residence/reporting, as for the other five places in the same sentence (2026-10-20 replication check)"
+F2GU5RIDAE,Cyprus,year_infection,2018,,"holiday infection in Cyprus; the article gives no year, only that it was before 2018 (2026-10-20 replication check)"
+BTYVFPKH8F,Gironde,role,reporting_area,infection,"'Between 4 and 7 people have been infected with the West Nile virus in Gironde' states the place of infection (2026-10-20 replication check)"
+BTYVFPKH8F,Gironde,quote,"At least four cases of West Nile virus have been reported in Gironde, near Bordeaux.","Between 4 and 7 people have been infected with the ""West Nile"" virus in Gironde",quote that states the place of infection
+IADDBMD9NK,Panchova,infection_uncertain,,TRUE,"'infected individuals were infected in Panchova, near Belgrade and Požarevac' follows a sentence on infected mosquitoes in three cities and may refer to mosquitoes; Fabi 2026-10-20: grade B"
+IADDBMD9NK,Požarevac,infection_uncertain,,TRUE,same sentence as Panchova; Fabi 2026-10-20: grade B

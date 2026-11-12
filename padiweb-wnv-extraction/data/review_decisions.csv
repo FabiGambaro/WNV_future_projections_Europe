@@ -1,0 +1,24 @@
+article_id,place,quote,decision,reviewer_note,reviewer,date
+1BJUFNDV3Z,Vienna,"The probable places of infection are to be found in Vienna, Lower Austria and Burgenland.",exclude,unclear place of infection,FG,2026-10-21
+7BLBLHPHHJ,Nitra County,West Nile virus spread from mosquito to person in Nitra County and Dunajská Streda District,A,is correct should be put back,FG,2026-10-21
+7BLBLHPHHJ,Dunajská Streda District,West Nile virus spread from mosquito to person in Nitra County and Dunajská Streda District,A,is correct should be put back,FG,2026-10-21
+IADDBMD9NK,Panchova,"infected individuals were infected in Panchova, near Belgrade and Požarevac",B,not clear if it's human or mosquito cases,FG,2026-10-21
+XTQBGY9UB4,Nitra County,West Nile virus was transmitted from mosquito to person for the first time in Nitra County and Dunajská Streda District,A,is correct should be put back,FG,2026-10-21
+XTQBGY9UB4,Dunajská Streda District,West Nile virus was transmitted from mosquito to person for the first time in Nitra County and Dunajská Streda District,A,is correct should be put back,FG,2026-10-21
+F2GU5RIDAE,Cyprus,who became infected while on vacation in Cyprus,exclude,"unclear date of infection, grade C",FG,2026-10-21
+B2XQ5G0F41,Trapani,ricoverato in gravi condizioni in Rianimazione a Trapani,B,"unclear place of infection, should be gradeB",FG,2026-10-21
+PU75696M3D,Pordenone,The elderly woman is currently hospitalized in the Nurology department of the Pordenone hospital.,B,"unclear place of infection, should be gradeB",FG,2026-10-21
+0KZ26YXE4T,Utrecht,It was assumed that he contracted the virus because he had been stung by a mosquito in Utrecht.,B,"hedged wording, unclear place of infection",FG,2026-10-21
+1XGD5Z5NUW,Utrecht,"In mid-October it became known that a first infection had been detected in the Netherlands, in a man who probably had also contracted it near Utrecht.",B,"hedged wording, unclear place of infection",FG,2026-10-21
+429CW3TOAS,Utrecht,It was assumed that he contracted the virus because he had been stung by a mosquito in Utrecht.,B,"hedged wording, unclear place of infection",FG,2026-10-21
+XDKLSF0X3Z,Bordeaux,"Admitted to intensive care at the Bordeaux University Hospital, an 80-year-old man almost died following an infection with the West Nile virus",B,"not clear the place of infection but the patient didn't traveled and lived in Bordeaux, grade B.",FG,2026-10-21
+JPZ41WP0KM,Villanueva del Rey,there is a person who has contracted the West Nile virus in the Cordovan town of Villanueva del Rey,A,is correct should be put back,FG,2026-10-21
+VF9RHDH1TA,Guaro,First case in people of the West Nile virus in Malaga with an infection in Guaro,A,is correct should be put back,FG,2026-10-21
+255GTUIWST,Vienna,"During a summer vacation in Vienna a few years ago, he contracted the virus.",exclude,unclear date,FG,2026-10-21
+5777PGJCIS,Berlin,"Although it has already happened in parts of Germany (Brandenburg, Berlin, Saxony, Saxony-Anhalt and Thuringia) that people become infected within the country, this is extremely rare.",exclude,not clear place of infection,FG,2026-10-21
+5M46SEJGAQ,Utrecht region,Another five cases of West Nile virus have been diagnosed in the Utrecht region,B,"unclear place of infection, should be gradeB",FG,2026-10-21
+D69S8A3T3E,Reus,"his wife, 85, is the suspected case",exclude,suspected case,FG,2026-10-21
+123B40JZ9I,Pistoia,the previous one had occurred last August 13 in an 82-year-old patient who still remains hospitalized always in the Infectious Diseases of San Jacopo,exclude,unclear place of infection,FG,2026-10-21
+1GYZDZCGA3,Alexandria,was found in the Infectious Diseases department of the Hospital of Alexandria,exclude,unclear place of infection,FG,2026-10-21
+IY9B8GTQ83,Latisana,"According to the Health Authority 2 Bassa friulana isontina that of Latisana appears an ""autochthonous and not imported case"" of West Nile virus ascertained.",exclude,suspected case,FG,2026-10-21
+PU75696M3D,Villotta,"The patient, who lives in Villotta with her husband, reported that she had not stayed in other areas and therefore the case is considered autochthonous.",B,"lives in Villotta, had not stayed in other areas: residence plus no travel, place of infection not explicit (FG, thread 2026-10-21)",FG,2026-10-21

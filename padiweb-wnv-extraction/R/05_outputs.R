@@ -20,7 +20,8 @@ rec <- rec |> left_join(art, by = "article_id")
 cols <- c(cols[1], "url", cols[-1])
 explicit <- rec |> filter(explicit_autochthonous == "TRUE") |> select(any_of(cols))
 other    <- rec |> filter(explicit_autochthonous != "TRUE") |> select(any_of(cols))
-review   <- explicit |> filter(!is.na(review_reason))
+# records already decided in data/review_decisions.csv leave the Review tab (their decision stays in review_reason)
+review   <- explicit |> filter(!is.na(review_reason), !str_detect(review_reason, "reviewed: "))
 
 to_cells <- function(x) x |>
   mutate(country = substr(nuts3_2024, 1, 2)) |>
@@ -52,9 +53,9 @@ readme <- tibble(
     sprintf("%d articles; %d produced at least one human case place record.", n_art, n_with),
     "Presence requires the text to state where the person was infected ('contracted the disease in <town>', 'exposed in Milan'): grade A records with a NUTS3 code. Records that say the case was local (autochthonous / locally acquired / domestic) but give only where the person lives or where the case was recorded are grade B and kept apart.",
     "One row per NUTS3 x year of infection with a stated place of infection (presence, not case counts). Same content as NUTS3_year_presence_explicit.csv.",
-    "Sensitivity layer: NUTS3 x years supported only by grade B records (explicitly local, placed by residence or reporting area, place of infection not stated); NUTS3 x years already in NUTS3_year are not repeated. Same content as NUTS3_year_B_residence.csv.",
+    "Sensitivity layer: NUTS3 x years supported only by grade B records (a hedged place of infection such as 'probably infected in Hamburg', or explicitly local but placed by residence or reporting area); NUTS3 x years already in NUTS3_year are not repeated. Same content as NUTS3_year_B_residence.csv.",
     "All explicit records, with quote, NUTS3 2024/2021, how the code was found, and grade.",
-    "Explicit records that need a human check; the reason is in review_reason.",
+    "Explicit records that still need a human check; the reason is in review_reason. Records already decided in data/review_decisions.csv are not repeated here (see review_reason in Records).",
     "Records without explicit local acquisition or a stated place of infection (residence, reporting area or hospital with status not stated, paraphrase only, or imported), and all records outside continental Europe (other continents, EU outermost regions such as Guadeloupe), kept for traceability only.",
     "Every masked article in the sample: whether the original could be opened, whether an identical unmasked duplicate was found, and how many records it produced. Masked articles whose original could not be read must be checked at url_original.",
     sprintf("%d records in total; %d explicit; %d NUTS3 x year presences (grade A); %d more NUTS3 x years from grade B only; %d to review.", nrow(rec), nrow(explicit), nrow(presence), nrow(b_layer), nrow(review))))

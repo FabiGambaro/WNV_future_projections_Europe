@@ -19,6 +19,9 @@ Fields:
 
 Rules:
 - Residence is not place of infection. "A woman from Navarra infected in Utrera" -> one record, place Utrera, role infection.
+- "Cases come from X" and "a case in the province of X ... infected locally" give residence / reporting area, not a place of infection. Hedged wording ("probably infected in X", "most likely place of exposure X") stays role infection with the hedge in the quote; R grades it B.
+- When an article lists earlier travel cases by year ("in 2007 from Cyprus and Tanzania"), record each place. Leave year_infection empty when the text gives no year for that case.
+- A city-state (Berlin, Hamburg, Vienna) has place_level "province": it is itself a NUTS3 unit.
 - A case with two candidate exposure places -> one record per place, role possible_exposure.
 - Masked text ("-----" or "*****") may hide place names: never guess them; mention the mask in note.
 - article_outcome: "n place record(s)" or "no usable location: <reason>".

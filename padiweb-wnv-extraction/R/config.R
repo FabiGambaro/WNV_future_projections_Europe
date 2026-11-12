@@ -25,7 +25,10 @@ cfg <- list(
 
   # Data tables shipped with the pipeline
   ALIASES_CSV     = Sys.getenv("ALIASES_CSV", "data/nuts3_aliases.csv"),
-  CORRECTIONS_CSV = Sys.getenv("CORRECTIONS_CSV", "data/manual_corrections.csv"),
+  CORRECTIONS_CSV = Sys.getenv("CORRECTIONS_CSV", "data/manual_corrections.csv"),          # NUTS3 fixes
+  RECORD_FIXES_CSV = Sys.getenv("RECORD_FIXES_CSV", "data/record_corrections.csv"),        # field fixes to extracted records
+  ADDED_RECORDS_CSV = Sys.getenv("ADDED_RECORDS_CSV", "data/added_records.csv"),           # records the readers missed
+  REVIEW_DECISIONS_CSV = Sys.getenv("REVIEW_DECISIONS_CSV", "data/review_decisions.csv"),  # final grades set by a human reviewer
 
   WORK_DIR = Sys.getenv("WORK_DIR", "work"),
   OUT_DIR  = Sys.getenv("OUT_DIR", "output"),
