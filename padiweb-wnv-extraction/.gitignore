@@ -1,0 +1,6 @@
+data-raw/
+ref/
+work/
+output/
+.Rhistory
+.RData
