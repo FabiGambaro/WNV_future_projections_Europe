@@ -1,7 +1,7 @@
 ##############################################################
 ##      Estimating nb people living in eco suit. areas      ##
 ##############################################################
-setwd("~/Dropbox/Postdoc_SpELL/GRP_Future_projections_Arbo")
+
 require(readr)
 require(plyr)
 require(dplyr)

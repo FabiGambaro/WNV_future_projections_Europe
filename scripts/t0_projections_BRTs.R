@@ -1,7 +1,7 @@
 ##################################
 ##   t0 maps model A and B     ##
 ##################################
-setwd("~/Dropbox/Postdoc_SpELL/GRP_Future_projections_Arbo")
+
 require(readr)
 require(plyr)
 require(dplyr)

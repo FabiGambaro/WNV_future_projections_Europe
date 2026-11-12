@@ -1,7 +1,7 @@
 ##############################################################
 ##      Estimating final metric performances                ##
 ##############################################################
-setwd("~/Dropbox/Postdoc_SpELL/GRP_Future_projections_Arbo")
+
 require(readr)
 require(ecospat)    
 

@@ -1,7 +1,7 @@
 ###########################################
 ##    BRT training all env variables     ##
 ###########################################
-setwd("~/Dropbox/Postdoc_SpELL/GRP_Future_projections_Arbo")
+
 require(ggplot2)
 require(ncf)
 require(ncdf4)
@@ -16,8 +16,6 @@ require(gbm)
 require(blockCV)
 require(ecospat)
 require(readr)
-
-options(scipen = 999)
 
 envVariables <- c("temp_winter","temp_spring","temp_summer","temp_fall", "temp_var","pr_winter" ,"pr_spring","pr_summer","pr_fall",
                   "rh_winter","rh_spring","rh_summer","rh_fall","croplands", "pastures", "rangelands", "urbanAreas","primaryForest",
