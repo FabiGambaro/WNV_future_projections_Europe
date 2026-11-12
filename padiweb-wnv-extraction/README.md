@@ -50,12 +50,4 @@ Rscript R/03_extract_claude_batch.R collect   # waits for the batch, writes work
 Rscript R/04_geocode_grade.R
 Rscript R/05_outputs.R                    # output/NUTS3_year_presence_explicit.csv, output/padiweb_wnv_explicit.xlsx
 ```
-
-## Reproduce the pilot (steps 01, 02, 04, 05)
-In the pilot, Claude read the 100 articles directly; its extraction is saved in `pilot/records_extracted.csv`.
-```sh
-export SAMPLE_IDS=pilot/sample_ids.csv RECORDS_CSV=pilot/records_extracted.csv \
-       OUTCOMES_CSV=pilot/article_outcomes.csv OUT_DIR=pilot/output
-Rscript R/01_prepare.R && Rscript R/02_masked_recovery.R && Rscript R/04_geocode_grade.R && Rscript R/05_outputs.R
-```
 `pilot/gazetteer_cache.csv` holds the GeoNames points used in the pilot. Pass it with `GAZETTEER_CACHE=` only if GeoNames can't be downloaded.
