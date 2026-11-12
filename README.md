@@ -14,6 +14,7 @@ The time window of each GWL was defined as the 21-year period centred on the yea
 
 
 ## Future projections
+Projected ecological suitability for human WNV cases increases with warming. At the current warming level (+1.3 °C), suitable areas are concentrated in southern and south-eastern Europe. As warming increases to +2.8 °C, suitability expands northwards into central and northern Europe (Figure 2). As a result, the number of people living in ecologically suitable areas rises from about 202 million at +1.3 °C to about 300 million at +2.8 °C (median across GCM-SSP-BRT runs). Projections are computed in scripts/future_projections_GWL.R
 
 <img width="2565" height="1770" alt="image" src="https://github.com/user-attachments/assets/6a95160b-570b-482a-a849-92e6fbf74b5f" />
 
