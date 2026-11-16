@@ -7,8 +7,7 @@ Instead of fixed future periods, projections were made at global warming levels 
 
 The time window of each GWL was defined as the 21-year period centred on the year in which the 21-year running mean of global surface air temperature first exceeds the level, relative to 1850–1900. For climate data, this was done separately for each GCM-SSP combination, using each GCM’s own baseline. For land-use and population data, it was done using the SSP3-7.0 marker scenario. Time windows are computed in scripts/warming_levels_timewindows.R
 
-<img width="2565" height="1774" alt="image" src="https://github.com/user-attachments/assets/7de8bd9d-552d-4263-b8f8-dc8b880dc80d" />
-
+<img width="6884" height="3556" alt="image" src="https://github.com/user-attachments/assets/d7eb3371-dd9d-4282-a995-fd9c87450829" />
 
 <sub>Figure 1. Time window for the global warming levels according to the different pledges scenarios. The 21-year window corresponds to the global warming level estimated for each GCM-SSP combination (global climatic model and shared socioeconomic pathway combinations; top panel), based on global mean surface temperature (GSAT, annual global mean surface air temperature) relative to the pre-industrial era (1850-1900) and for the land-use SSP3-7.0 marker scenario (bottom panel) using GSAT anomalies from SSP3-7.0 produced by the AIM/CGE integrated assessment model (IAM) and estimated with the FaIR emulator from IPCC. Future warming levels were estimated by the Emission Gap Report 2025 with a 66% likelihood of not being exceeded according to the different pledged scenarios. “NDC” refers to “nationally determined contributions”.</sub>
 
@@ -16,6 +15,6 @@ The time window of each GWL was defined as the 21-year period centred on the yea
 ## Future projections
 Projected ecological suitability for human WNV cases increases with warming. At the current warming level (+1.3 °C), suitable areas are concentrated in southern and south-eastern Europe. As warming increases to +2.8 °C, suitability expands northwards into central and northern Europe (Figure 2). As a result, the number of people living in ecologically suitable areas rises from about 202 million at +1.3 °C to about 300 million at +2.8 °C (median across GCM-SSP-BRT runs). Projections are computed in scripts/future_projections_GWL.R
 
-<img width="2565" height="1770" alt="image" src="https://github.com/user-attachments/assets/6a95160b-570b-482a-a849-92e6fbf74b5f" />
+<img width="5132" height="3549" alt="image" src="https://github.com/user-attachments/assets/e58945de-ecb6-4b8b-8538-c4696efeb860" />
 
 <sub>Figure 2. Future projections of ecological suitability for human WNV cases in Europe at different global warming levels. The first row of maps shows the estimated ecological suitability for human WNV cases at different global warming levels, averaged across 100 replicate BRT analyses and model combinations. The second row of maps shows the difference in ecological suitability relative to the current warming level of 1.3°C. The density plot and green bar at the bottom of the figure summarise time windows of each GCM-SSP combination (combination of global climatic model and shared socioeconomic pathway) and land-use marker scenario, respectively, used to extract the corresponding data in each warming-level threshold. </sub>
